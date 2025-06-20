@@ -40,7 +40,7 @@ public:
     }
 
     /**Returns the timestamp of the position*/
-    uint64_t getTimestamp()		{ return timestamp; }
+    uint64_t getTimestamp()	const	{ return timestamp; }
 
     /**
     * Sets the timestamp of the position
@@ -50,7 +50,7 @@ public:
     void     setTimestamp(uint64_t e)	{ timestamp = e;}
 
     /**Returns the latitude of the position*/
-    double   getLatitude()		{ return vector(0); }
+    double   getLatitude()	const	{ return vector(0); }
 
     /**
     * Sets the latitude of the position
@@ -60,7 +60,7 @@ public:
     void     setLatitude(double l)	{ vector(0)=l; slat=sin(vector(0) * D2R); clat=cos(vector(0) * D2R);}
 
     /**Returns the longitude of the position*/
-    double   getLongitude()		{ return vector(1); }
+    double   getLongitude()	const	{ return vector(1); }
 
     /**
     * Sets the longitude of the position
@@ -70,7 +70,7 @@ public:
     void     setLongitude(double l)     { vector(1)=l; slon=sin(vector(1) * D2R);clon=cos(vector(1) * D2R);}
 
     /**Returns the ellipsoidal height of the position*/
-    double   getEllipsoidalHeight()     	{ return vector(2); }
+    double   getEllipsoidalHeight()   const  	{ return vector(2); }
 
     /**
     * Sets the ellipsoidal height of the position
@@ -80,16 +80,16 @@ public:
     void     setEllipsoidalHeight(double h) 	{ vector(2)=h;}
 
     /**Returns the sine value of the latitude*/
-    double   getSlat()		{ return slat; }
+    double   getSlat()	const	{ return slat; }
 
     /**Returns the sine value of the longitude*/
-    double   getSlon()		{ return slon; }
+    double   getSlon()	const	{ return slon; }
 
     /**Returns the cosine value of the latitude*/
-    double   getClat()		{ return clat; }
+    double   getClat()	const	{ return clat; }
 
     /**Returns the cosine value of the longitude*/
-    double   getClon()		{ return clon; }
+    double   getClon()	const	{ return clon; }
 
     /**Returns the vectorized form of the position*/
     Eigen::Vector3d & getVector() { return vector;}
