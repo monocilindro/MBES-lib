@@ -115,7 +115,7 @@ public:
     }
 
     /**Return the across track angle*/
-    double getAcrossTrackAngle() {
+    double getAcrossTrackAngle() const {
         return acrossTrackAngle;
     }
 
@@ -126,7 +126,7 @@ public:
     }
 
     /**Return the along track angle*/
-    double getAlongTrackAngle() {
+    double getAlongTrackAngle() const {
         return alongTrackAngle;
     }
 
@@ -137,17 +137,17 @@ public:
     }
 
     /**Return the cosine value of the along track angle*/
-    double getCA() {
+    double getCA() const {
         return cA;
     }
 
     /**Return the cosine value of the across track angle*/
-    double getCB() {
+    double getCB() const {
         return cB;
     }
 
     /**Return the timestamp of the ping*/
-    uint64_t getTimestamp() {
+    uint64_t getTimestamp() const {
         return timestamp;
     }
 
@@ -160,7 +160,7 @@ public:
      * Returns the ID
      * @return ID
      */
-    long getId() {
+    long getId() const {
         return id;
     }
 
@@ -172,17 +172,17 @@ public:
     }
 
     /**Return the sine value of the along track angle*/
-    double getSA() {
+    double getSA() const {
         return sA;
     }
 
     /**Return the sine value of the across track angle*/
-    double getSB() {
+    double getSB() const {
         return sB;
     }
 
     /**Return the sound speed of the surface*/
-    double getSurfaceSoundSpeed() {
+    double getSurfaceSoundSpeed() const {
         return surfaceSoundSpeed;
     }
 
@@ -195,7 +195,7 @@ public:
     }
 
     /**Return the time value of the transition between two points*/
-    double getTwoWayTravelTime() {
+    double getTwoWayTravelTime() const {
         return twoWayTravelTime;
     }
 
@@ -208,7 +208,7 @@ public:
     }
 
     /**Return the quality of the ping*/
-    uint32_t getQuality() {
+    uint32_t getQuality() const {
         return quality;
     }
 
@@ -221,7 +221,7 @@ public:
     }
 
     /**Return the intensity of the ping*/
-    double getIntensity() {
+    double getIntensity() const {
         return intensity;
     }
 
@@ -234,7 +234,7 @@ public:
     }
     
     /**Return the transducer depth*/
-    double getTransducerDepth() {
+    double getTransducerDepth() const {
         return transducerDepth;
     }
 
