@@ -50,40 +50,40 @@ public:
   };
 
   /**Returns the roll angle*/
-  double getRoll()        { return roll;}
+  double getRoll() const { return roll;}
 
   /**Returns the radian of the roll angle*/
-  double getRollRadians() { return roll * D2R;}
+  double getRollRadians() const { return roll * D2R;}
 
   /**Returns the sine value of the roll angle*/
-  double getSr()     { return sr;}
+  double getSr() const { return sr;}
 
   /**Returns the cosine value of the roll angle*/
-  double getCr()     { return cr;}
+  double getCr() const { return cr;}
 
   /**Returns the pitch angle*/
-  double getPitch()        { return pitch;}
+  double getPitch() const { return pitch;}
 
   /**Returns the radian the pitch angle*/
-  double getPitchRadians() { return pitch * D2R;}
+  double getPitchRadians() const { return pitch * D2R;}
 
   /**Returns the sine value of the pitch angle*/
-  double getSp()     { return sp;}
+  double getSp() const { return sp;}
 
   /**Returns the cosine value of the pitch angle*/
-  double getCp()     { return cp;}
+  double getCp() const { return cp;}
 
   /**Returns the heading angle*/
-  double getHeading()        { return heading;}
+  double getHeading() const { return heading;}
 
   /**Returns the radian of the heading angle*/
-  double getHeadingRadians() { return heading * D2R;}
+  double getHeadingRadians() const { return heading * D2R;}
 
   /**Returns the sine value of the heading angle*/
-  double getSh()     { return sh;}
+  double getSh() const { return sh;}
 
   /**Returns the cosine value of the heading angle*/
-  double getCh()     { return ch;}
+  double getCh() const { return ch;}
 
   /**
   * Sets the roll angle and his values sine and cosine
@@ -119,7 +119,7 @@ public:
   }
 
   /**Returns the timestamp of the attitude*/
-  uint64_t getTimestamp(){ return timestamp;}
+  uint64_t getTimestamp() const { return timestamp;}
 
   /**
   * Sets the timestamp value
